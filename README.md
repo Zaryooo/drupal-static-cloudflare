@@ -133,8 +133,26 @@ $settings["reverse_proxy_addresses"] = ["127.0.0.1"];
 
 * NOTE: if "drush" doesn't work - use "vendor/bin/drush" instead. Example: `vendor/bin/drush serve` (inside the drupal_site folder).
 
+## Install the Tome Static
+* Go to Extend tab search for "Tome Static" go ahead to install it.
+* After that you could generate the static pages of your Drupal website.
+
+## Generate Static pages
+* Under Configuration tab you have to click on "Generate static site" from the "Tome Static" section.
+* Click "Submit" button to generate the static pages
+
 ## Sync with Cloudflare Pages
 * Once static generation is finished
 ```phpt
 CLOUDFLARE_ACCOUNT_ID=[ACCOUNT_ID] CLOUDFLARE_API_TOKEN=[API_TOKEN] npx wrangler pages publish drupal_site/html --project-name=[PROJECT_NAME]
 ```
+
+## Add Cloudflare Token and Account ID
+* Go to Extend tab search for "Cloud Pages" go ahead to install it.
+* There is a custom module called "Cloud Pages" in Configuration tab under Development section.
+* Click to the "Cloud Pages" if you want to add token and id or to change already saved ones.
+
+## Deploy to Cloudflare pages
+* Go to Extend tab search for "Deploy Pages" go ahead to install it.
+* You can deploy the Drupal static pages to Cloudflare by goes to Configuration tab under Development section you can find "Deploy Pages"
+* Click on the "Deploy" to start deploying in the your Cloudflare account
